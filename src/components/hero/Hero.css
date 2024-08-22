@@ -1,0 +1,195 @@
+.hero{
+    background-color: #25262a;
+    position: relative; /* Ensure absolute positioned children are contained within this div */
+    padding-top: 100px; 
+    min-height: 780px;
+   
+   
+   
+}
+.hero-container{
+    width: 100%;
+    max-width: 1600px;
+  
+    margin: 0 auto;
+}
+.hero h5{
+    color:#64f4ab;
+}
+.hero h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90px;
+}
+.information{
+   
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.hero p{
+    color: #ecf2fd;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.big-image{
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.hero .circle {
+   z-index: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%; /* Ensures it's a circle */
+    border: 120px solid #64f4ab;/* Adjust border width and color as needed */
+}
+.hero img{
+    position: absolute;
+    
+   
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    background-color: #2d2e32;
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #64f4ab;
+
+}
+.logo-id {
+    top: 0%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-ps {
+    top: 0%;
+    right: 20%;
+    transform: translate(50%, -50%);
+}
+
+.logo-xd {
+    bottom: 50%;
+    right: 10%;
+    transform: translate(50%, 50%);
+}
+
+.logo-ai {
+    bottom: 50%;
+    left: 10%;
+    transform: translate(-50%, 50%);
+}
+@media (max-width: 1000px) {
+    .hero h1{
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 70px;
+        max-width: 300px;
+    }
+    .hero p{
+        max-width: 800px;
+        color: #ecf2fd;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    .hero .circle {
+        z-index: 0;
+         position: absolute;
+         overflow: hidden;
+         width: 450px;
+         height: 450px;
+         border-radius: 50%; /* Ensures it's a circle */
+         border: 70px solid #64f4ab;/* Adjust border width and color as needed */
+     }
+     .hero img{
+        position: absolute;
+        max-height: 500px;
+       
+    }
+}
+@media (max-width: 780px) {
+ 
+  .hero{
+    min-height: 1100px;
+  }
+    .hero-container{
+        display: flex;
+        flex-wrap: wrap;
+      
+        
+       
+    }
+    .hero img{
+        top: 0;
+    }
+    .hero .circle{
+        top: 0;
+        width: 350px;
+        height: 350px;
+    }
+    .logo{
+        position: relative;
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+    .logo-id {
+      
+      
+        
+        transform: translate(-200%, 30%);
+    }
+    .logo-ps {
+       
+      
+        left: 20%;
+        transform: translate(80%, 30%);
+    }
+    .logo-ai {
+       
+       
+        
+        transform: translate(-500%, 220%);
+    }
+    .logo-xd {
+       
+       
+       
+        transform: translate(300%, 220%);
+    }
+}
+@media (max-width: 500px) {
+    .logo-ai {
+       
+   
+        
+     display: none;
+    }
+    .logo-xd {
+       display: none;
+     
+       
+    }
+    .logo{
+        display: none;
+    }
+}

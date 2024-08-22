@@ -1,0 +1,46 @@
+.project1-info{
+    max-width: 700px;
+    gap: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project1-info p{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300px;
+}
+.project1-info button{
+    transition: margin-left 0.3s ease ;
+    color: rgb(193, 193, 42);
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.project1-info button:hover{
+    margin-left: 20px;
+    color: rgb(193, 193, 42);
+
+}
+.custom-icon{
+    color: rgb(193, 193, 42);
+}
+
+.project1-card{
+ 
+   
+    transform: rotate(-10deg);
+    background-color: #575960;
+    border-radius: 50px;
+}
+.project1-info h4{
+    color: #64f4ab;
+}
+.project1-card img{
+    max-width: 100%;
+    height: auto; 
+    border-radius: 50px;
+  
+    
+}

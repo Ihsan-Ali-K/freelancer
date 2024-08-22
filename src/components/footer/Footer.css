@@ -1,0 +1,10 @@
+.footer{
+    background-color: #25262a;
+    min-height: 200px;
+}
+.footer-icon{
+    color: rgb(203, 174, 28);
+}
+.footer-links:hover .footer-icon{
+    color: white;
+}

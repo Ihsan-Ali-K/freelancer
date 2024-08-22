@@ -1,0 +1,34 @@
+.caraousel {
+    gap: 100px;
+ 
+}
+.caraousel p{
+    max-width: 600px;
+    font-size: 25px;
+    line-height: 40px;
+}
+.caraousel-custom{
+    max-width: 400px;
+    max-height: 400px;
+    transform: rotate(-10deg);
+    border-radius: 20px;
+}
+.caraousel-image{
+    background-color: rgb(95, 92, 92);
+    border-radius: 20px;
+}
+.custom-qoute{
+    color: aquamarine;
+    
+}
+.caraousel h2{
+    color: aquamarine;
+}
+.caraousel-icons {
+   
+    cursor: pointer;
+}
+ .active{
+    color: rgb(226, 183, 41);
+
+}

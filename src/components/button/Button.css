@@ -1,0 +1,31 @@
+
+.main-button{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.custom-button{
+    width: 300px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+   
+}
+.main-button button{
+    background-color: black;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    box-shadow: 10px 10px 80px 20px rgb(13, 12, 12);
+}
+.main-button button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 80px 20px rgb(122, 119, 119);
+}
+.main-button button:active{
+    background-color: black !important;
+    color: white !important;
+}

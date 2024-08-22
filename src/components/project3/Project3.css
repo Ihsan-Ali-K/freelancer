@@ -1,0 +1,10 @@
+.project3-circle {
+    height: 300px;
+    width: 300px;
+    border: 70px solid #64f4ab; /* Making border transparent */
+    border-radius: 50%;
+    position: absolute;
+    left: -180px; /* Half of the width to push it to the left */
+    overflow: hidden;
+
+}

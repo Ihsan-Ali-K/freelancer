@@ -1,0 +1,117 @@
+.nav{
+    height: 150px;
+    background-color: #25262a;
+}
+.navbar__logo-img {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+  }
+.nav-container{
+    height: 70px;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+}
+ .button{
+    width: 250px;
+    background: linear-gradient(#ffaf29, #fcb900 );
+    height: 70px;
+    border-radius: 20px;
+    font-size: 25px;
+    border: none;
+    color: black;
+}
+
+.nav-links a{
+    margin-left: 20px;
+
+    font-size: 30px;
+    border-bottom: 3px solid #25262a;
+    transition: border-bottom 0.1s;
+}
+.nav-links a:hover{
+    border-bottom: 3px solid white;
+}
+.icon-button{
+    
+    display: flex;
+    gap: 50px;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #31333b;
+    transition: background-color ease 0.5s;
+    
+}
+.icon:hover{
+   background-color: #dcb114;;
+    cursor: pointer;
+    color: black;
+}
+.icon:hover .custom-icon{
+    color: black;
+}
+.custom-icon{
+ width: 30px;
+ height: 30px;
+
+}
+.menu{
+    display: none;
+}
+.close{
+    display: none;
+}
+/* smaller screens */
+@media (max-width: 780px) {
+    .nav-links  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: black;
+        transition: 1s;
+        transform: translateY(-130vh);
+        z-index: 101;
+       
+
+    }
+    .nav-links a{
+        border: none;
+    }
+    .nav-links a:hover{
+        border: none;
+        text-shadow: 5px 5px 20px  white;
+    }
+    .icon{
+        display: none;
+    }
+    .menu{
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+     .responsive-nav{
+        transform: none;
+    }
+    .close{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+    }
+  .nav .button{
+    display: none;
+  }
+}
